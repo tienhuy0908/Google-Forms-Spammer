@@ -141,7 +141,7 @@ while True:
         print(f"Required: {_required}")
 
         if _type != "Open Ended":
-            print(f"Options: {', '.join(option for option in _options)}")
+            print(f"Options: {', '.join(str(option) for option in _options)}")
 
             if _type == "Multiple Choice":
                 if _required == True:
